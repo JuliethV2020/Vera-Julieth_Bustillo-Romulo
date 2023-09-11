@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/loginSignupStyles.css">
-    
-  <!-- ---------------- <script src="./scripts/utils.js"></script> ---------------- -->
-  
-  <script src="./scripts/nuevo.js"></script>
 
 </head>
 <body>
@@ -21,29 +17,34 @@
       </header>
     
       <div class="container">
-        <form>
+        <form id="add_new_odontologo">
           <div class="form-header">
             <h2>Salud oral</h2>
             <p class="rounded">Register odontologo</p>
           </div>
-
-          <label>Matricula</label>
-          <input id="inputMatricula" type="text">
+      
+          <label for="inputMatricula">Matricula</label>
+          <input id="inputMatricula" type="text" name="inputMatricula">
     
-          <label>Nombre</label>
-          <input id="inputNombre" type="text">
+          <label for="inputNombre">Nombre</label>
+          <input id="inputNombre" type="text" name="inputNombre">
     
-          <label>Apellido</label>
-          <input id="inputApellido" type="text">
+          <label for="inputApellido">Apellido</label>
+          <input id="inputApellido" type="text" name="inputApellido">
     
           
-          <button type="submit">Crear Cuenta</button>
+          <button id="agregar">Crear Cuenta</button>
         </form>
-    
+
+        <div id="response" style="display:none; margin-top:10px">
+        </div>
         <div class="ingresarA">
-          <a href="">¿Ya tienes una cuenta? Ingrese aquí</a>
+          <a href="lista.html"> Ingrese aquí para observar la lista</a>
         </div>
       </div>
-    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="./scripts/registro.js"></script>
 </body>
 </html>
